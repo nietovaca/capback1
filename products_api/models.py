@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Product(models.Model):
-    category = models.CharField(required=False)
+    category = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     image = models.TextField(blank=True)
