@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from rest_framework import generics
 from .serializers import CategorySerializer
 from .serializers import ProductSerializer

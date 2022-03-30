@@ -11,6 +11,7 @@ class Category(models.Model):
         return self.name
 
 class Product(models.Model):
+    id = models.IntegerField(primary_key=True)
     category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='product_creator')
     title = models.CharField(max_length=255)

@@ -11,4 +11,4 @@ class CategorySerializer(serializers.ModelSerializer): # serializers.ModelSerial
 class ProductSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
     class Meta:
         model = Product # tell django which model to use
-        fields = ('category', 'created_by', 'title', 'author', 'description', 'image', 'price', 'in_stock', 'is_active', 'created', 'updated',) # tell django which fields to include
+        fields = ('id', 'category', 'created_by', 'title', 'author', 'description', 'image', 'price', 'in_stock', 'is_active', 'created', 'updated', 'amount',) # tell django which fields to include
