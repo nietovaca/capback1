@@ -56,10 +56,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-
 CORS_ALLOW_ALL_CREDENTIALS = True 
-
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000',]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # add this
 
