@@ -6,7 +6,7 @@ class Product(models.Model):
     category = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
-    primary_image = models.ImageField(upload_to= 'img/', default = 'https://backcap.herokuapp.com/img/motogirl.png')
+    primary_image = models.ImageField(upload_to= 'img/', default = 'https://backcap.herokuapp.com/img/img/motogirl.png')
     secondary_image = models.ImageField(blank=True, upload_to='img/')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     in_stock = models.BooleanField(default=True)
