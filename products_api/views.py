@@ -11,3 +11,4 @@ class ProductList(generics.ListCreateAPIView):
 class ProductDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all().order_by('id')
     serializer_class = ProductSerializer
+
